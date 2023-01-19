@@ -5,7 +5,7 @@ const input = process.argv.slice(2);
 // https://api.thecatapi.com/v1/breeds/search
 //Search for a breed using '?q=<breedname>'
 
-request(`https://api.thecatap93i.com/v1/breeds/search?q=${input[0]}`, (error, response, body) => {
+request(`https://api.thecatapi.com/v1/breeds/search?q=${input[0]}`, (error, response, body) => {
   //Edge Case: if request fails
   if (error) {
     console.log(error);
